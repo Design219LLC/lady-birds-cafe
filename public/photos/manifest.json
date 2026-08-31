@@ -1,0 +1,312 @@
+{
+  "hero": {
+    "width": 3060,
+    "height": 1868,
+    "files": [
+      {
+        "w": 720,
+        "h": 440,
+        "kb": 26,
+        "file": "hero-720.webp"
+      },
+      {
+        "w": 1200,
+        "h": 733,
+        "kb": 53,
+        "file": "hero-1200.webp"
+      },
+      {
+        "w": 1800,
+        "h": 1099,
+        "kb": 89,
+        "file": "hero-1800.webp"
+      }
+    ],
+    "default": "hero.webp"
+  },
+  "catfish": {
+    "width": 3060,
+    "height": 1945,
+    "files": [
+      {
+        "w": 800,
+        "h": 508,
+        "kb": 30,
+        "file": "catfish-800.webp"
+      },
+      {
+        "w": 1400,
+        "h": 890,
+        "kb": 67,
+        "file": "catfish-1400.webp"
+      },
+      {
+        "w": 2000,
+        "h": 1271,
+        "kb": 112,
+        "file": "catfish-2000.webp"
+      }
+    ],
+    "default": "catfish.webp"
+  },
+  "cfs": {
+    "width": 2809,
+    "height": 1854,
+    "files": [
+      {
+        "w": 800,
+        "h": 528,
+        "kb": 13,
+        "file": "cfs-800.webp"
+      },
+      {
+        "w": 1400,
+        "h": 924,
+        "kb": 27,
+        "file": "cfs-1400.webp"
+      },
+      {
+        "w": 2000,
+        "h": 1320,
+        "kb": 44,
+        "file": "cfs-2000.webp"
+      }
+    ],
+    "default": "cfs.webp"
+  },
+  "tacos": {
+    "width": 3380,
+    "height": 2077,
+    "files": [
+      {
+        "w": 800,
+        "h": 492,
+        "kb": 18,
+        "file": "tacos-800.webp"
+      },
+      {
+        "w": 1400,
+        "h": 860,
+        "kb": 36,
+        "file": "tacos-1400.webp"
+      },
+      {
+        "w": 2000,
+        "h": 1229,
+        "kb": 56,
+        "file": "tacos-2000.webp"
+      }
+    ],
+    "default": "tacos.webp"
+  },
+  "salmon": {
+    "width": 2455,
+    "height": 1648,
+    "files": [
+      {
+        "w": 800,
+        "h": 537,
+        "kb": 18,
+        "file": "salmon-800.webp"
+      },
+      {
+        "w": 1400,
+        "h": 940,
+        "kb": 35,
+        "file": "salmon-1400.webp"
+      },
+      {
+        "w": 2000,
+        "h": 1343,
+        "kb": 55,
+        "file": "salmon-2000.webp"
+      }
+    ],
+    "default": "salmon.webp"
+  },
+  "exterior": {
+    "width": 1512,
+    "height": 1134,
+    "files": [
+      {
+        "w": 800,
+        "h": 600,
+        "kb": 127,
+        "file": "exterior-800.webp"
+      },
+      {
+        "w": 1400,
+        "h": 1050,
+        "kb": 363,
+        "file": "exterior-1400.webp"
+      }
+    ],
+    "default": "exterior.webp"
+  },
+  "servers": {
+    "width": 2401,
+    "height": 2287,
+    "files": [
+      {
+        "w": 700,
+        "h": 667,
+        "kb": 54,
+        "file": "servers-700.webp"
+      },
+      {
+        "w": 1200,
+        "h": 1143,
+        "kb": 121,
+        "file": "servers-1200.webp"
+      }
+    ],
+    "default": "servers.webp"
+  },
+  "mural": {
+    "width": 725,
+    "height": 975,
+    "files": [
+      {
+        "w": 600,
+        "h": 807,
+        "kb": 140,
+        "file": "mural-600.webp"
+      }
+    ],
+    "default": "mural.webp"
+  },
+  "fb-plate": {
+    "width": 960,
+    "height": 681,
+    "files": [
+      {
+        "w": 800,
+        "h": 568,
+        "kb": 62,
+        "file": "fb-plate-800.webp"
+      },
+      {
+        "w": 960,
+        "h": 681,
+        "kb": 82,
+        "file": "fb-plate-960.webp"
+      }
+    ],
+    "default": "fb-plate.webp"
+  },
+  "hopflop": {
+    "width": 552,
+    "height": 677,
+    "files": [
+      {
+        "w": 552,
+        "h": 677,
+        "kb": 28,
+        "file": "hopflop-552.webp"
+      }
+    ],
+    "default": "hopflop.webp"
+  },
+  "detail-sides": {
+    "width": 1377,
+    "height": 972,
+    "files": [
+      {
+        "w": 700,
+        "h": 494,
+        "kb": 15,
+        "file": "detail-sides-700.webp"
+      }
+    ],
+    "default": "detail-sides.webp"
+  },
+  "detail-gravy": {
+    "width": 1685,
+    "height": 1112,
+    "files": [
+      {
+        "w": 700,
+        "h": 462,
+        "kb": 15,
+        "file": "detail-gravy-700.webp"
+      }
+    ],
+    "default": "detail-gravy.webp"
+  },
+  "fb-bird": {
+    "width": 960,
+    "height": 681,
+    "files": [
+      {
+        "w": 600,
+        "h": 426,
+        "kb": 47,
+        "file": "fb-bird-600.webp"
+      },
+      {
+        "w": 960,
+        "h": 681,
+        "kb": 96,
+        "file": "fb-bird-960.webp"
+      }
+    ],
+    "default": "fb-bird.webp"
+  },
+  "fajitas": {
+    "width": 1000,
+    "height": 563,
+    "files": [
+      {
+        "w": 800,
+        "h": 450,
+        "kb": 61,
+        "file": "fajitas-800.webp"
+      },
+      {
+        "w": 1000,
+        "h": 563,
+        "kb": 91,
+        "file": "fajitas-1000.webp"
+      }
+    ],
+    "default": "fajitas.webp"
+  },
+  "fish-tacos": {
+    "width": 562,
+    "height": 1000,
+    "files": [
+      {
+        "w": 560,
+        "h": 996,
+        "kb": 175,
+        "file": "fish-tacos-560.webp"
+      },
+      {
+        "w": 562,
+        "h": 1000,
+        "kb": 179,
+        "file": "fish-tacos-800.webp"
+      }
+    ],
+    "default": "fish-tacos.webp"
+  },
+  "street-tacos": {
+    "width": 1000,
+    "height": 750,
+    "files": [
+      {
+        "w": 800,
+        "h": 600,
+        "kb": 68,
+        "file": "street-tacos-800.webp"
+      },
+      {
+        "w": 1000,
+        "h": 750,
+        "kb": 99,
+        "file": "street-tacos-1000.webp"
+      }
+    ],
+    "default": "street-tacos.webp"
+  }
+}
