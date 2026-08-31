@@ -7,6 +7,7 @@ import {
   photos,
 } from "@/lib/cafe";
 import { Photo } from "@/components/photo";
+import { Reveal } from "@/components/reveal";
 
 export const Route = createFileRoute("/menu")({
   component: MenuPage,
@@ -30,7 +31,7 @@ function MenuPage() {
 
   return (
     <main id="main" className="bg-paper pb-20 pt-24 md:pb-0 md:pt-28">
-      <header className="mx-auto max-w-6xl px-4 sm:px-6">
+      <Reveal className="mx-auto max-w-6xl px-4 sm:px-6">
         <p className="kicker">Plates people order</p>
         <h1 className="mt-4 max-w-2xl font-display text-hero text-ink">
           The food
@@ -46,11 +47,11 @@ function MenuPage() {
             {CAFE.phoneDisplay}
           </a>
         </p>
-      </header>
+      </Reveal>
 
       {lead.photo ? (
         <article id={lead.id} className="mt-14 scroll-mt-24 sm:mt-20">
-              <figure className="overflow-hidden">
+              <figure className="frame photo-zoom overflow-hidden">
             <Photo
               photo={photos[lead.photo]}
               sizes="100vw"
@@ -76,7 +77,7 @@ function MenuPage() {
               id={dish.id}
               className="scroll-mt-24"
             >
-              <figure className="overflow-hidden">
+              <figure className="frame photo-zoom overflow-hidden">
                 <Photo
                   photo={photos[dish.photo]}
                   sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
@@ -107,7 +108,7 @@ function MenuPage() {
         <div className="mt-10 grid gap-8 sm:grid-cols-2">
           {tray?.photo ? (
             <article id={tray.id} className="scroll-mt-24">
-              <figure className="overflow-hidden">
+              <figure className="frame photo-zoom overflow-hidden">
                 <Photo
                   photo={photos[tray.photo]}
                   sizes="(min-width: 640px) 50vw, 100vw"
@@ -123,7 +124,7 @@ function MenuPage() {
           ) : null}
           {fishTacos?.photo ? (
             <article id={fishTacos.id} className="scroll-mt-24">
-              <figure className="overflow-hidden">
+              <figure className="frame photo-zoom overflow-hidden">
                 <Photo
                   photo={photos[fishTacos.photo]}
                   sizes="(min-width: 640px) 50vw, 100vw"
