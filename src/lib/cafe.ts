@@ -46,36 +46,35 @@ export const photos = {
   catfish: {
     src: "/photos/catfish.webp",
     srcSet:
-      "/photos/catfish-800.webp 800w, /photos/catfish-1400.webp 1400w, /photos/catfish-2000.webp 2000w, /photos/catfish-2560.webp 2560w",
-    width: 2560,
-    height: 1627,
+      "/photos/catfish-800.webp 800w, /photos/catfish-1400.webp 1400w, /photos/catfish-1888.webp 1888w",
+    width: 1888,
+    height: 1259,
     alt: "Fried catfish plate on a metal tray with hush puppies, steak fries, coleslaw, fried corn, and shrimp",
     source: "arkansas-living",
   },
   cfs: {
     src: "/photos/cfs.webp",
-    srcSet:
-      "/photos/cfs-800.webp 800w, /photos/cfs-1400.webp 1400w, /photos/cfs-2000.webp 2000w, /photos/cfs-2560.webp 2560w",
-    width: 2560,
-    height: 1690,
+    srcSet: "/photos/cfs-800.webp 800w, /photos/cfs-1400.webp 1400w, /photos/cfs-1973.webp 1973w",
+    width: 1973,
+    height: 1315,
     alt: "Chicken fried steak with cream gravy, mashed potatoes, and green beans",
     source: "arkansas-living",
   },
   tacos: {
     src: "/photos/tacos.webp",
     srcSet:
-      "/photos/tacos-800.webp 800w, /photos/tacos-1400.webp 1400w, /photos/tacos-2000.webp 2000w, /photos/tacos-2560.webp 2560w",
-    width: 2560,
-    height: 1573,
+      "/photos/tacos-800.webp 800w, /photos/tacos-1400.webp 1400w, /photos/tacos-1920.webp 1920w",
+    width: 1920,
+    height: 1280,
     alt: "Firecracker tacos with fried shrimp, cabbage, pico de gallo, avocado, and salsa",
     source: "arkansas-living",
   },
   salmon: {
     src: "/photos/salmon.webp",
     srcSet:
-      "/photos/salmon-800.webp 800w, /photos/salmon-1400.webp 1400w, /photos/salmon-2000.webp 2000w, /photos/salmon-2560.webp 2560w",
-    width: 2560,
-    height: 1719,
+      "/photos/salmon-800.webp 800w, /photos/salmon-1400.webp 1400w, /photos/salmon-2000.webp 2000w, /photos/salmon-2175.webp 2175w",
+    width: 2175,
+    height: 1450,
     alt: "Caribbean salmon with cilantro rice, grilled vegetables, shrimp, and pineapple",
     source: "arkansas-living",
   },
