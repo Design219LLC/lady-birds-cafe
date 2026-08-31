@@ -37,7 +37,7 @@ export const photos = {
   hero: {
     src: "/photos/storefront.webp",
     srcSet:
-      "/photos/storefront-720.webp 720w, /photos/storefront-750.webp 750w, /photos/storefront-1200.webp 1200w",
+      "/photos/storefront-720.webp 720w, /photos/storefront-750.webp 750w, /photos/storefront-1200.webp 1200w, /photos/storefront-1400.webp 1400w",
     width: 1200,
     height: 798,
     alt: "Lady Birds Cafe on Center Street — black awning, circular window logo, and the front door",

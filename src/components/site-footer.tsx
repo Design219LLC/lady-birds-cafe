@@ -1,13 +1,12 @@
 import { CAFE } from "@/lib/cafe";
-import { SignMark, Wordmark } from "@/components/mark";
+import { SignMark } from "@/components/mark";
 
 export function SiteFooter() {
   return (
     <footer className="border-t border-line bg-paper-deep text-ink">
       <div className="mx-auto max-w-6xl px-4 pt-16 pb-28 sm:px-6 sm:pt-24 md:pb-24">
-        <p className="flex items-center gap-3 text-3xl text-ink sm:text-4xl">
-          <SignMark className="h-14 sm:h-16 brightness-110" />
-          <Wordmark />
+        <p className="flex items-center">
+          <SignMark className="h-24 w-24 sm:h-28 sm:w-28" />
         </p>
         <div className="mt-10 grid gap-10 sm:grid-cols-2 sm:items-end">
           <div>

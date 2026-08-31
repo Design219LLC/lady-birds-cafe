@@ -15,7 +15,7 @@ export function HoursBoard({ id = "hours" }: { id?: string }) {
   return (
     <section
       id={id}
-      className="scroll-mt-28 border-t-[3px] border-brick bg-paper-deep px-6 py-10 text-ink sm:px-10 sm:py-12"
+      className="lift scroll-mt-28 border-t-[3px] border-brick bg-paper-deep px-6 py-10 text-ink sm:px-10 sm:py-12"
       aria-labelledby="hours-heading"
     >
       <p className="kicker text-ink-soft">Kitchen hours</p>
