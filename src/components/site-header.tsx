@@ -1,6 +1,7 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { CAFE } from "@/lib/cafe";
 import { SignMark, Wordmark } from "@/components/mark";
+import { useHeaderLift } from "@/lib/use-header-lift";
 import { cn } from "@/lib/utils";
 
 const NAV = [
@@ -10,9 +11,15 @@ const NAV = [
 
 export function SiteHeader() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const lifted = useHeaderLift();
 
   return (
-    <header className="fixed inset-x-0 top-0 z-40 border-b border-line bg-paper text-ink">
+    <header
+      className={cn(
+        "header-bar fixed inset-x-0 top-0 z-40 border-b border-line bg-paper/92 text-ink backdrop-blur-md",
+        lifted && "is-lifted",
+      )}
+    >
       <div className="mx-auto flex h-16 max-w-6xl items-center gap-3 px-4 sm:h-[4.75rem] sm:px-6">
         <Link
           to="/"
@@ -30,9 +37,7 @@ export function SiteHeader() {
               to={item.to}
               className={cn(
                 "inline-flex min-h-11 items-center px-2.5 text-[0.7rem] font-semibold uppercase tracking-[0.16em] sm:px-3 sm:text-xs",
-                pathname === item.to
-                  ? "text-brick"
-                  : "text-ink hover:text-ink",
+                pathname === item.to ? "text-brick" : "text-ink hover:text-ink",
               )}
             >
               {item.label}

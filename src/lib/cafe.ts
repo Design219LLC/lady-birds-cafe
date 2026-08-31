@@ -8,16 +8,13 @@ export const CAFE = {
   addressLine: "120 W Center St, Sheridan, AR 72150",
   phoneDisplay: "(870) 942-4163",
   phoneTel: "+18709424163",
-  facebook:
-    "https://www.facebook.com/p/Lady-Birds-Cafe-100089774571141/",
+  facebook: "https://www.facebook.com/p/Lady-Birds-Cafe-100089774571141/",
   mapsDirections:
     "https://www.google.com/maps/dir/?api=1&destination=120+W+Center+St,+Sheridan,+AR+72150",
-  mapsSearch:
-    "https://www.google.com/maps/search/?api=1&query=120+W+Center+St,+Sheridan,+AR+72150",
+  mapsSearch: "https://www.google.com/maps/search/?api=1&query=120+W+Center+St,+Sheridan,+AR+72150",
   mapsEmbed:
     "https://maps.google.com/maps?q=120%20W%20Center%20St%2C%20Sheridan%2C%20AR%2072150&z=16&output=embed",
-  appleMaps:
-    "https://maps.apple.com/?daddr=120+W+Center+St,+Sheridan,+AR+72150",
+  appleMaps: "https://maps.apple.com/?daddr=120+W+Center+St,+Sheridan,+AR+72150",
   timezone: "America/Chicago",
   promise: "Downtown Sheridan. Plate comes out hot.",
   hoursStatus: "directory" as const,
@@ -25,11 +22,7 @@ export const CAFE = {
 } as const;
 
 export type PhotoSource =
-  | "facebook"
-  | "facebook-guest"
-  | "arkansas-living"
-  | "directory-guest"
-  | "directory";
+  "facebook" | "facebook-guest" | "arkansas-living" | "directory-guest" | "directory";
 
 export type Photo = {
   src: string;
@@ -44,7 +37,7 @@ export const photos = {
   hero: {
     src: "/photos/storefront.webp",
     srcSet:
-      "/photos/storefront-720.webp 720w, /photos/storefront-750.webp 750w, /photos/storefront-1200.webp 1200w",
+      "/photos/storefront-720.webp 720w, /photos/storefront-750.webp 750w, /photos/storefront-1200.webp 1200w, /photos/storefront-1400.webp 1400w",
     width: 1200,
     height: 798,
     alt: "Lady Birds Cafe on Center Street — black awning, circular window logo, and the front door",
@@ -88,7 +81,8 @@ export const photos = {
   },
   exterior: {
     src: "/photos/exterior.webp",
-    srcSet: "/photos/exterior-800.webp 800w, /photos/exterior-1200.webp 1200w, /photos/exterior-1600.webp 1600w, /photos/exterior-2560.webp 2560w",
+    srcSet:
+      "/photos/exterior-800.webp 800w, /photos/exterior-1200.webp 1200w, /photos/exterior-1600.webp 1600w, /photos/exterior-2560.webp 2560w",
     width: 2560,
     height: 1072,
     alt: "Lady Birds Cafe in a red brick building on Center Street, with a teal bird mural by the door",
@@ -96,7 +90,8 @@ export const photos = {
   },
   servers: {
     src: "/photos/servers.webp",
-    srcSet: "/photos/servers-800.webp 800w, /photos/servers-1200.webp 1200w, /photos/servers-1600.webp 1600w, /photos/servers-2400.webp 2400w",
+    srcSet:
+      "/photos/servers-800.webp 800w, /photos/servers-1200.webp 1200w, /photos/servers-1600.webp 1600w, /photos/servers-2400.webp 2400w",
     width: 2400,
     height: 2286,
     alt: "Servers in the dining room at Lady Birds Cafe",
@@ -112,7 +107,8 @@ export const photos = {
   },
   bird: {
     src: "/photos/fb-bird.webp",
-    srcSet: "/photos/fb-bird-600.webp 600w, /photos/fb-bird-960.webp 960w, /photos/fb-bird-1600.webp 1600w",
+    srcSet:
+      "/photos/fb-bird-600.webp 600w, /photos/fb-bird-960.webp 960w, /photos/fb-bird-1600.webp 1600w",
     width: 1600,
     height: 1135,
     alt: "Painted bird over a nest of food — Lady Birds Cafe Facebook page photo",
