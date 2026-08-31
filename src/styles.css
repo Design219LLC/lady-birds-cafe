@@ -8,7 +8,6 @@
   --color-muted: #8f877d;
   --color-brick: #e24b3c;
   --color-brick-deep: #c43c2f;
-  --color-teal: #3d9a92;
   --color-line: rgb(245 242 236 / 0.12);
 
   --font-display: "Cormorant Garamond", "Times New Roman", serif;
@@ -24,9 +23,7 @@
   --radius-lg: 12px;
   --radius-xl: 20px;
 
-  --shadow-border:
-    0px 0px 0px 1px rgb(245 242 236 / 0.08),
-    0px 1px 2px -1px rgb(0 0 0 / 0.4);
+  --shadow-border: 0px 0px 0px 1px rgb(245 242 236 / 0.08), 0px 1px 2px -1px rgb(0 0 0 / 0.4);
 
   --ease-smooth-out: cubic-bezier(0.22, 1, 0.36, 1);
   --motion-quick: 150ms;
@@ -67,9 +64,9 @@
   }
 
   h1 {
-    font-weight: 500;
-    line-height: 0.92;
-    letter-spacing: -0.03em;
+    font-weight: 400;
+    line-height: 0.9;
+    letter-spacing: -0.035em;
   }
 
   h2,
@@ -102,23 +99,33 @@
 }
 
 @layer components {
+  /* Two layers: a heavy floor so the copy always has a bed, and a left wash
+     so the lockup never fights the signage painted on the building. */
   .hero-scrim {
-    background: linear-gradient(
-      to top,
-      rgb(12 11 10 / 0.92) 0%,
-      rgb(12 11 10 / 0.42) 22%,
-      rgb(12 11 10 / 0.08) 40%,
-      transparent 56%
-    );
+    background:
+      linear-gradient(
+        to right,
+        rgb(12 11 10 / 0.88) 0%,
+        rgb(12 11 10 / 0.62) 38%,
+        rgb(12 11 10 / 0.28) 68%,
+        rgb(12 11 10 / 0.35) 100%
+      ),
+      linear-gradient(
+        to top,
+        rgb(12 11 10 / 0.95) 0%,
+        rgb(12 11 10 / 0.72) 26%,
+        rgb(12 11 10 / 0.3) 52%,
+        rgb(12 11 10 / 0.12) 72%
+      );
   }
 
   .hero-storefront {
-    object-position: 62% 30%;
+    object-position: 62% 34%;
   }
 
   @media (min-width: 768px) {
     .hero-storefront {
-      object-position: 55% 32%;
+      object-position: 68% 40%;
     }
   }
 
@@ -175,14 +182,6 @@
     transform: scale(0.96);
   }
 
-  .btn-fill {
-    background: var(--color-paper);
-    color: var(--color-ink);
-  }
-  .btn-fill:hover {
-    background: var(--color-paper-deep);
-  }
-
   .btn-ink {
     background: var(--color-ink);
     color: var(--color-paper);
@@ -200,10 +199,11 @@
 
   .btn-call {
     background: var(--color-brick);
-    color: var(--color-ink);
+    color: var(--color-paper);
   }
   .btn-call:hover {
     background: var(--color-brick-deep);
+    color: var(--color-ink);
   }
 
   .hours-row {
@@ -246,6 +246,10 @@
       0 0 0 1px rgb(245 242 236 / 0.08),
       0 1px 2px rgb(0 0 0 / 0.35),
       0 22px 48px -22px rgb(0 0 0 / 0.72);
+  }
+
+  .photo-zoom {
+    overflow: hidden;
   }
 
   .frame {
@@ -314,7 +318,7 @@
     animation-delay: 320ms;
   }
 
-  .reveal {
+  .js .reveal {
     opacity: 0;
     transform: translateY(28px);
     filter: blur(6px);
@@ -325,25 +329,21 @@
     will-change: opacity, transform, filter;
   }
 
-  .reveal.is-in {
+  .js .reveal.is-in {
     opacity: 1;
     transform: none;
     filter: none;
     will-change: auto;
   }
 
-  .reveal-media img {
+  .js .reveal-media img {
     transform: scale(1.08);
     transition: transform 1100ms var(--ease-smooth-out);
     will-change: transform;
   }
 
-  .reveal-media.is-in img {
+  .js .reveal-media.is-in img {
     transform: scale(1);
-  }
-
-  .photo-zoom {
-    overflow: hidden;
   }
 
   .photo-zoom img {

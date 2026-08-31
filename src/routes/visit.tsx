@@ -3,7 +3,8 @@ import { CAFE, photos } from "@/lib/cafe";
 import { Photo } from "@/components/photo";
 import { HoursBoard } from "@/components/hours-board";
 import { TodayChip } from "@/components/today-chip";
-import { Reveal, useParallax } from "@/components/reveal";
+import { Reveal } from "@/components/reveal";
+import { useParallax } from "@/lib/use-parallax";
 import { SignMark } from "@/components/mark";
 
 export const Route = createFileRoute("/visit")({
@@ -38,9 +39,7 @@ function VisitPage() {
         <div className="hero-copy mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
           <SignMark className="h-20 w-20 sm:h-24 sm:w-24" />
           <p className="kicker mt-6">Find us</p>
-          <h1 className="mt-3 font-display text-hero text-ink">
-            {CAFE.street}
-          </h1>
+          <h1 className="mt-3 font-display text-hero text-ink">{CAFE.street}</h1>
           <p className="mt-5 font-display text-section font-medium italic text-ink">
             {CAFE.city}, {CAFE.state} {CAFE.zip} · across from the courthouse
           </p>
@@ -53,9 +52,7 @@ function VisitPage() {
       <section className="mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:py-24">
         <Reveal>
           <p className="kicker">Get here</p>
-          <h2 className="mt-3 font-display text-display text-ink">
-            Downtown Sheridan
-          </h2>
+          <h2 className="mt-3 font-display text-display text-ink">Downtown Sheridan</h2>
           <p className="mt-5 max-w-md text-base leading-relaxed text-ink-soft">
             Across from the courthouse. Plaza parking, or the square.
           </p>
@@ -118,9 +115,7 @@ function VisitPage() {
           </figure>
           <div>
             <p className="kicker">Facebook</p>
-            <h2 className="mt-3 font-display text-display text-ink">
-              They still post on Facebook
-            </h2>
+            <h2 className="mt-3 font-display text-display text-ink">They still post on Facebook</h2>
             <p className="mt-5 max-w-md text-base leading-relaxed text-ink-soft">
               Closing days and specials post there first.
             </p>
@@ -134,9 +129,7 @@ function VisitPage() {
       <section className="bg-paper">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
           <p className="kicker">Map</p>
-          <h2 className="mt-3 font-display text-display text-ink">
-            120 W Center St
-          </h2>
+          <h2 className="mt-3 font-display text-display text-ink">120 W Center St</h2>
           <div className="mt-10 overflow-hidden photo-outline">
             <iframe
               title="Map of Lady Birds Cafe, Sheridan Arkansas"

@@ -1,9 +1,4 @@
-import {
-  createRootRoute,
-  HeadContent,
-  Outlet,
-  Scripts,
-} from "@tanstack/react-router";
+import { createRootRoute, HeadContent, Outlet, Scripts } from "@tanstack/react-router";
 import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import { PageShell } from "@/components/page-shell";
@@ -49,6 +44,11 @@ function RootDocument() {
   return (
     <html lang="en" suppressHydrationWarning className="antialiased">
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "document.documentElement.classList.add('js')",
+          }}
+        />
         <HeadContent />
       </head>
       <body className="bg-paper font-sans text-ink">

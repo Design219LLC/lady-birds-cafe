@@ -1,7 +1,7 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { CAFE } from "@/lib/cafe";
 import { SignMark } from "@/components/mark";
-import { useHeaderLift } from "@/components/reveal";
+import { useHeaderLift } from "@/lib/use-header-lift";
 import { cn } from "@/lib/utils";
 
 const NAV = [
@@ -21,11 +21,7 @@ export function SiteHeader() {
       )}
     >
       <div className="mx-auto flex h-[4.5rem] max-w-6xl items-center gap-3 px-4 sm:h-20 sm:px-6">
-        <Link
-          to="/"
-          className="flex min-h-11 items-center pr-2"
-          aria-label={`${CAFE.name} home`}
-        >
+        <Link to="/" className="flex min-h-11 items-center pr-2" aria-label={`${CAFE.name} home`}>
           <SignMark />
         </Link>
 
@@ -36,9 +32,7 @@ export function SiteHeader() {
               to={item.to}
               className={cn(
                 "inline-flex min-h-11 items-center px-2.5 text-[0.7rem] font-semibold uppercase tracking-[0.16em] sm:px-3 sm:text-xs",
-                pathname === item.to
-                  ? "text-brick"
-                  : "text-ink hover:text-ink",
+                pathname === item.to ? "text-brick" : "text-ink hover:text-ink",
               )}
             >
               {item.label}
