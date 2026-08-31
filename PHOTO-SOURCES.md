@@ -21,6 +21,20 @@ No generated plates. No invented prices, reviews, or owner story on the site.
 | `fajitas` | Chicken / steak / shrimp skillet | Public guest photo via Wheree directory listing of Lady Birds | Directory-guest |
 | `fish-tacos` | Fish tacos, vertical plate | Public Yelp diner photo (`bphoto/11jUr302JELGDpw8nehIFA`) | Directory-guest |
 
+### Plate crops
+
+`cfs`, `catfish`, `tacos` and `salmon` reached us with a white matte around the
+frame. The plates underneath were shot on black, so the matte was the only light
+part — on a near-black page it read as a white slab rather than photography.
+
+The web derivatives (`.webp`) are cropped to the largest 3:2 rectangle inside the
+food, which drops the light backdrop from 18–29% of the frame to 0–4% and leaves
+the plates on the black they were shot on. Crops are tighter than the originals,
+so the srcset ladders stop at the real pixel width instead of upscaling.
+
+The `.jpg` files are the untouched originals — re-crop from those, not from the
+derivatives.
+
 Restaurantji’s 31-photo set is cited in the job but the gallery is Cloudflare-blocked from this build seat. Yelp’s 34-photo page is 403. Facebook food albums beyond the public profile image require login. Used every public Facebook frame that resolved: the page bird, plus the guest tray post.
 
 Not used: stock interiors, AI plates, Google rating widget (4.6 / 405 could not be re-verified on Maps).

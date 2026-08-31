@@ -25,101 +25,107 @@
     "default": "hero.webp"
   },
   "catfish": {
-    "width": 3060,
-    "height": 1945,
+    "width": 1888,
+    "height": 1259,
     "files": [
       {
         "w": 800,
-        "h": 508,
-        "kb": 30,
+        "h": 533,
+        "kb": 57,
         "file": "catfish-800.webp"
       },
       {
         "w": 1400,
-        "h": 890,
-        "kb": 67,
+        "h": 934,
+        "kb": 112,
         "file": "catfish-1400.webp"
       },
       {
-        "w": 2000,
-        "h": 1271,
-        "kb": 112,
-        "file": "catfish-2000.webp"
+        "w": 1888,
+        "h": 1259,
+        "kb": 159,
+        "file": "catfish-1888.webp"
       }
     ],
     "default": "catfish.webp"
   },
   "cfs": {
-    "width": 2809,
-    "height": 1854,
+    "width": 1973,
+    "height": 1315,
     "files": [
       {
         "w": 800,
-        "h": 528,
-        "kb": 13,
+        "h": 533,
+        "kb": 23,
         "file": "cfs-800.webp"
       },
       {
         "w": 1400,
-        "h": 924,
-        "kb": 27,
+        "h": 933,
+        "kb": 47,
         "file": "cfs-1400.webp"
       },
       {
-        "w": 2000,
-        "h": 1320,
-        "kb": 44,
-        "file": "cfs-2000.webp"
+        "w": 1973,
+        "h": 1315,
+        "kb": 72,
+        "file": "cfs-1973.webp"
       }
     ],
     "default": "cfs.webp"
   },
   "tacos": {
-    "width": 3380,
-    "height": 2077,
+    "width": 1920,
+    "height": 1280,
     "files": [
       {
         "w": 800,
-        "h": 492,
-        "kb": 18,
+        "h": 533,
+        "kb": 33,
         "file": "tacos-800.webp"
       },
       {
         "w": 1400,
-        "h": 860,
-        "kb": 36,
+        "h": 933,
+        "kb": 63,
         "file": "tacos-1400.webp"
       },
       {
-        "w": 2000,
-        "h": 1229,
-        "kb": 56,
-        "file": "tacos-2000.webp"
+        "w": 1920,
+        "h": 1280,
+        "kb": 91,
+        "file": "tacos-1920.webp"
       }
     ],
     "default": "tacos.webp"
   },
   "salmon": {
-    "width": 2455,
-    "height": 1648,
+    "width": 2175,
+    "height": 1450,
     "files": [
       {
         "w": 800,
-        "h": 537,
-        "kb": 18,
+        "h": 533,
+        "kb": 28,
         "file": "salmon-800.webp"
       },
       {
         "w": 1400,
-        "h": 940,
-        "kb": 35,
+        "h": 933,
+        "kb": 55,
         "file": "salmon-1400.webp"
       },
       {
         "w": 2000,
-        "h": 1343,
-        "kb": 55,
+        "h": 1333,
+        "kb": 84,
         "file": "salmon-2000.webp"
+      },
+      {
+        "w": 2175,
+        "h": 1450,
+        "kb": 93,
+        "file": "salmon-2175.webp"
       }
     ],
     "default": "salmon.webp"
