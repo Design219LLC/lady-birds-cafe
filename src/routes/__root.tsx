@@ -21,7 +21,7 @@ export const Route = createRootRoute({
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: APP_NAME },
       { name: "description", content: DESCRIPTION },
-      { name: "theme-color", content: "#F3E9D8" },
+      { name: "theme-color", content: "#0C0B0A" },
       { name: "author", content: "Lady Birds Cafe" },
     ],
     links: [

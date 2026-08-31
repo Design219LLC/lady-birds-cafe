@@ -24,7 +24,7 @@ export function TodayChip({
       <div
         className={cn(
           "h-5 w-52 max-w-full",
-          onPhoto ? "bg-paper/15" : "bg-ink/10",
+          onPhoto ? "bg-ink/20" : "bg-ink/10",
         )}
         aria-hidden="true"
       />
@@ -35,7 +35,7 @@ export function TodayChip({
     <p
       className={cn(
         "flex max-w-full flex-wrap items-baseline gap-x-3 gap-y-1 text-base font-medium",
-        onPhoto ? "text-paper" : "text-ink",
+        onPhoto ? "text-ink" : "text-ink",
         className,
       )}
     >

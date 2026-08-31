@@ -15,17 +15,17 @@ export function HoursBoard({ id = "hours" }: { id?: string }) {
   return (
     <section
       id={id}
-      className="scroll-mt-28 border-t-[3px] border-brick bg-ink px-6 py-10 text-paper sm:px-10 sm:py-12"
+      className="scroll-mt-28 border-t-[3px] border-brick bg-paper-deep px-6 py-10 text-ink sm:px-10 sm:py-12"
       aria-labelledby="hours-heading"
     >
-      <p className="kicker text-paper/85">Kitchen hours</p>
+      <p className="kicker text-ink-soft">Kitchen hours</p>
       <h2
         id="hours-heading"
-        className="mt-3 font-display text-display text-paper"
+        className="mt-3 font-display text-display text-ink"
       >
         When the door’s open
       </h2>
-      <p className="mt-4 max-w-sm text-sm leading-relaxed text-paper/85">
+      <p className="mt-4 max-w-sm text-sm leading-relaxed text-ink-soft">
         Public listings. Call if you’re making a drive.
       </p>
 
@@ -40,7 +40,7 @@ export function HoursBoard({ id = "hours" }: { id?: string }) {
               <span>
                 {day.label}
                 {isToday ? (
-                  <span className="ml-2 font-sans text-xs font-medium not-italic tracking-wide text-paper/80">
+                  <span className="ml-2 font-sans text-xs font-medium not-italic tracking-wide text-ink-soft">
                     {" "}
                     today
                   </span>
@@ -49,7 +49,7 @@ export function HoursBoard({ id = "hours" }: { id?: string }) {
               <span
                 className={cn(
                   "text-right tabular-nums not-italic",
-                  day.open === null && "text-paper/75",
+                  day.open === null && "text-muted",
                 )}
               >
                 {hoursLabel(day)}

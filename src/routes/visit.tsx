@@ -22,7 +22,7 @@ function VisitPage() {
   return (
     <main id="main" className="bg-paper pb-20 md:pb-0">
       <section className="bg-paper">
-        <figure className="bg-ink">
+        <figure className="bg-paper">
           <Photo
             photo={photos.exterior}
             sizes="100vw"

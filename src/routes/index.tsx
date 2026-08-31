@@ -34,7 +34,7 @@ function Home() {
 function Hero() {
   return (
     <section className="bg-paper">
-      <figure className="bg-ink">
+      <figure className="bg-paper">
         <Photo
           photo={photos.hero}
           sizes="100vw"
@@ -111,21 +111,21 @@ function OnTheTable() {
   const rest = FEATURED_DISHES.slice(1, 4);
 
   return (
-    <section className="bg-ink text-paper">
+    <section className="bg-paper-deep text-ink">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
-        <p className="kicker text-paper/85">The food</p>
+        <p className="kicker">The food</p>
         <div className="mt-4 flex flex-wrap items-end justify-between gap-4">
-          <h2 className="max-w-lg font-display text-display text-paper">
+          <h2 className="max-w-lg font-display text-display text-ink">
             Chicken fried steak, catfish, tacos.
           </h2>
           <Link
             to="/menu"
-            className="text-link text-sm font-medium text-paper/80 underline decoration-paper/25 underline-offset-4 hover:text-paper hover:decoration-paper"
+            className="text-link text-sm font-medium text-ink-soft underline decoration-ink/25 underline-offset-4 hover:text-ink hover:decoration-ink"
           >
             See the menu
           </Link>
         </div>
-        <p className="mt-4 max-w-md text-sm leading-relaxed text-paper/85">
+        <p className="mt-4 max-w-md text-sm leading-relaxed text-ink-soft">
           Call for today’s sides.
         </p>
       </div>
@@ -142,8 +142,8 @@ function OnTheTable() {
           </figure>
           <div className="mx-auto max-w-6xl px-4 py-5 sm:px-6">
             <div className="caption-bar">
-              <h3 className="font-display text-section text-paper">{lead.name}</h3>
-              <p className="text-sm text-paper/85">{lead.note}</p>
+              <h3 className="font-display text-section text-ink">{lead.name}</h3>
+              <p className="text-sm text-ink-soft">{lead.note}</p>
             </div>
           </div>
         </Link>
@@ -156,7 +156,7 @@ function OnTheTable() {
               key={dish.id}
               to="/menu"
               hash={dish.id}
-              className="group flex flex-col bg-ink"
+              className="group flex flex-col bg-paper-deep"
             >
               <figure className="overflow-hidden">
                 <Photo
@@ -167,10 +167,10 @@ function OnTheTable() {
                 />
               </figure>
               <div className="px-4 py-5 sm:px-6">
-                <h3 className="font-display text-xl text-paper sm:text-2xl">
+                <h3 className="font-display text-xl text-ink sm:text-2xl">
                   {dish.name}
                 </h3>
-                <p className="mt-1 text-sm text-paper/85">{dish.note}</p>
+                <p className="mt-1 text-sm text-ink-soft">{dish.note}</p>
               </div>
             </Link>
           ) : null,
